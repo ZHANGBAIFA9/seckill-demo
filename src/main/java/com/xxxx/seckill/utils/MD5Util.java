@@ -38,7 +38,6 @@ public class MD5Util {
         String str = salt.charAt(0) + salt.charAt(2)+ formPass+ salt.charAt(4) + salt.charAt(3) ;
         return md5(str) ;
     }
-
     public static String inputPassToDBPass(String inputPass , String salt){
         String fromPass = inputPassToFromPass(inputPass);
         String dbPass = fromPassToDBPass(fromPass, salt);
